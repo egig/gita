@@ -48,3 +48,9 @@ assetic:
             inputs: '%vendor_dir%/web/qs/dist/qs.js'
         sticky_kit:
             inputs: '%vendor_dir%/web/sticky-kit/jquery.sticky-kit.min.js'
+        elfinder_js:
+            inputs: '%vendor_dir%/web/elfinder/js/elfinder.min.js'
+        elfinder_css:
+            inputs: '%vendor_dir%/web/elfinder/css/elfinder.min.css'
+        elfinder_theme_css:
+            inputs: '%vendor_dir%/web/elfinder/css/theme.css'

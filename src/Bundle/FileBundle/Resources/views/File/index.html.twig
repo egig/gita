@@ -1,35 +1,63 @@
-{% extends "CoreBundle::base_index.html.twig" %}
+{% extends "CoreBundle::base.html.twig" %}
 
-{% block action %}
-<a href="" class="btn btn-success">
-    <i class="fa fa-upload" style=""></i> {{ __('Upload') }}
-</a>
+{% block stylesheets %}
+  {{ parent() }}
+  <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
 
-<button class="btn btn-default">
-    <i class="fa fa-folder-o"></i> {{ __('New Folder') }}
-</button>
+  {% stylesheets
+    '@elfinder_css'
+    '@elfinder_theme_css'
+    filter='?uglifycss' output="assets/css/*.css"
+  %}
+    <link rel="stylesheet" href="{{ asset_url }}" />
+  {% endstylesheets %}
+
+  <link rel="stylesheet" type="text/css" href="/assets/css/theme-bootstrap-libreicons-svg.css">
 {% endblock %}
 
-{% block table %}
-    <table class="table table-hover table-condensed" id="file-data-table">
-        <thead>
-            <tr>
-                <th class="sorting" width="15">
-                    <input id="file-checkall" type="checkbox">
-                </th>
-                <th width="800">{{ __('Filename') }}</th>
-                <th width="200">{{ __('Uploaded') }}</th>
-            </tr>
-        </thead>
-    </table>
+{% block content %}
+<div class="container">
+  <div id="elfinder"></div>
+</div>
 {% endblock %}
 
 
 {% block javascripts %}
     {{ parent() }}
     {% javascripts filter='?uglifyjs2' output="assets/js/*.js"
-    '@FileBundle/Resources/js/index.js' %}
+    '@jquery_ui_js'
+    '@elfinder_js' %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts  %}
-{% endblock %}
 
+
+    <script type="text/javascript" charset="utf-8">
+      // Documentation for client options:
+      // https://github.com/Studio-42/elFinder/wiki/Client-configuration-options
+      $(document).ready(function() {
+        $('#elfinder').elfinder({
+          url : '/elfinder/php/connector.minimal.php',  // connector URL (REQUIRED)
+          height : 600,
+          uiOptions: {
+              toolbar : [
+                  // toolbar configuration
+                  //['open'],
+                  ['back', 'forward'],
+                  ['reload'],
+                  //['home', 'up'],
+                  ['mkdir', 'mkfile', 'upload'],
+                  //['info'],
+                  //['quicklook'],
+                  //['copy', 'cut', 'paste'],
+                  //['rm'],
+                  //['duplicate', 'rename', 'edit'],
+                  //['extract', 'archive'],
+                  ['search'],
+                  ['view'],
+                  //['help']
+              ]
+          },
+        });
+      });
+    </script>
+{% endblock %}
