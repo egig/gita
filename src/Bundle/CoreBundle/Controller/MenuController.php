@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Controller;
+namespace gita\Bundle\CoreBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -8,9 +8,9 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
-use drafterbit\Bundle\CoreBundle\Form\Type\MenuType;
-use drafterbit\Bundle\CoreBundle\Entity\Menu;
-use drafterbit\Bundle\CoreBundle\Entity\MenuItem;
+use gita\Bundle\CoreBundle\Form\Type\MenuType;
+use gita\Bundle\CoreBundle\Entity\Menu;
+use gita\Bundle\CoreBundle\Entity\MenuItem;
 
 class MenuController extends Controller
 {

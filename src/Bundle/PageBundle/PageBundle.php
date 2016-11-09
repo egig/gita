@@ -1,10 +1,10 @@
 <?php
 
-namespace drafterbit\Bundle\PageBundle;
+namespace gita\Bundle\PageBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use drafterbit\Bundle\PageBundle\DependencyInjection\Compiler\AdminRoutePass;
+use gita\Bundle\PageBundle\DependencyInjection\Compiler\AdminRoutePass;
 
 class PageBundle extends Bundle
 {

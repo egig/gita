@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\DependencyInjection\Compiler;
+namespace gita\Bundle\CoreBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
@@ -10,16 +10,16 @@ class ApplicationRoutePass implements CompilerPassInterface
 {
     public function process(ContainerBuilder $container)
     {
-        if (!$container->hasDefinition('drafterbit.system.application_manager')) {
+        if (!$container->hasDefinition('gita.system.application_manager')) {
             return;
         }
 
         $definition = $container->getDefinition(
-            'drafterbit.system.application_manager'
+            'gita.system.application_manager'
         );
 
         $taggedServices = $container->findTaggedServiceIds(
-            'drafterbit.system.application'
+            'gita.system.application'
         );
 
         foreach ($taggedServices as $id => $tags) {

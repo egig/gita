@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Command;
+namespace gita\Bundle\CoreBundle\Command;
 
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Input\InputInterface;
@@ -13,8 +13,8 @@ class InstallCommand extends ContainerAwareCommand
     protected function configure()
     {
         $this
-            ->setName('drafterbit:install')
-            ->setDescription('Install drafterbit');
+            ->setName('gita:install')
+            ->setDescription('Install gita');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output)

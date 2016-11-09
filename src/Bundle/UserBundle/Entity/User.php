@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\UserBundle\Entity;
+namespace gita\Bundle\UserBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use FOS\UserBundle\Model\User as BaseUser;
@@ -23,7 +23,7 @@ class User extends BaseUser
     protected $id;
 
     /**
-     * @ORM\ManyToMany(targetEntity="drafterbit\Bundle\UserBundle\Entity\Group")
+     * @ORM\ManyToMany(targetEntity="gita\Bundle\UserBundle\Entity\Group")
      * @ORM\JoinTable(name="user_group",
      *      joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
      *      inverseJoinColumns={@ORM\JoinColumn(name="group_id", referencedColumnName="id")}

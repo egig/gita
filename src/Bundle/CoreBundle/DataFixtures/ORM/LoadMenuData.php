@@ -1,12 +1,12 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\DataFixtures\ORM;
+namespace gita\Bundle\CoreBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use drafterbit\Bundle\CoreBundle\Entity\Menu;
-use drafterbit\Bundle\CoreBundle\Entity\MenuItem;
+use gita\Bundle\CoreBundle\Entity\Menu;
+use gita\Bundle\CoreBundle\Entity\MenuItem;
 
 class LoadMenuData extends AbstractFixture implements OrderedFixtureInterface
 {

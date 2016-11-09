@@ -1,13 +1,13 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\DataFixtures\ORM;
+namespace gita\Bundle\CoreBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use drafterbit\Bundle\CoreBundle\Entity\System;
+use gita\Bundle\CoreBundle\Entity\System;
 
 class LoadSystemData extends AbstractFixture implements ContainerAwareInterface,  OrderedFixtureInterface
 {

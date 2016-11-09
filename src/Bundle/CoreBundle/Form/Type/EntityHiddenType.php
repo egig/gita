@@ -1,12 +1,12 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Form\Type;
+namespace gita\Bundle\CoreBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
-use drafterbit\Bundle\CoreBundle\Form\DataTransformer\EntityToIdTransformer;
+use gita\Bundle\CoreBundle\Form\DataTransformer\EntityToIdTransformer;
 use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 
 class EntityHiddenType extends AbstractType

@@ -1,13 +1,13 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Controller;
+namespace gita\Bundle\CoreBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Component\Security\Core\Exception\InvalidCsrfTokenException;
-use drafterbit\Bundle\CoreBundle\Entity\Widget;
+use gita\Bundle\CoreBundle\Entity\Widget;
 
 class CustomizerController extends Controller
 {
@@ -25,7 +25,7 @@ class CustomizerController extends Controller
 
         $theme = $request->query->get('theme');
 
-        $themeManager = $this->get('drafterbit.theme_manager');
+        $themeManager = $this->get('gita.theme_manager');
 
         $themePath = $themeManager->getPath($theme);
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Core\Search;
+namespace gita\Core\Search;
 
 interface ResultFormatterInterface
 {

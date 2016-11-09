@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Entity;
+namespace gita\Bundle\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\System\Setting;
+namespace gita\Bundle\CoreBundle\System\Setting;
 
-use drafterbit\Core\Setting\Field;
-use drafterbit\Bundle\CoreBundle\Form\Type\SystemType;
+use gita\Core\Setting\Field;
+use gita\Bundle\CoreBundle\Form\Type\SystemType;
 
 class GeneralField extends Field
 {

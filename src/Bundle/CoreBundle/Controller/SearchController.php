@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Controller;
+namespace gita\Bundle\CoreBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;

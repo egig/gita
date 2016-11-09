@@ -1,10 +1,10 @@
 {
-    "name": "drafterbit/drafterbit",
+    "name": "egig/gita",
     "license": "proprietary",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "drafterbit\\": "src/"
+            "gita\\": "src/"
         }
     },
     "autoload-dev": {

@@ -1,12 +1,12 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Tests\Controller;
+namespace gita\Bundle\CoreBundle\Tests\Controller;
 
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\BrowserKit\Cookie;
-use drafterbit\Test\WebTestCase;
-use drafterbit\Bundle\CoreBundle\Form\Type\ThemeType;
+use gita\Test\WebTestCase;
+use gita\Bundle\CoreBundle\Form\Type\ThemeType;
 
 class SettingControllerTest extends WebTestCase
 {
@@ -87,7 +87,7 @@ class SettingControllerTest extends WebTestCase
         $client = $this->getAuthorizedClient();
         
         $csrfToken = $client->getContainer()->get('form.csrf_provider')
-            ->generateCsrfToken(\drafterbit\Bundle\CoreBundle\Form\Type\WidgetType::INTENTION);
+            ->generateCsrfToken(\gita\Bundle\CoreBundle\Form\Type\WidgetType::INTENTION);
 
         // creat new
         $param = [
@@ -111,7 +111,7 @@ class SettingControllerTest extends WebTestCase
 
         $em = $client->getContainer()->get('doctrine')->getManager();
         $widget = $em->getRepository('CoreBundle"Widget')->find($param->id);
-        $this->assertTrue($widget instanceof \drafterbit\Bundle\CoreBundle\Entity\Widget);
+        $this->assertTrue($widget instanceof \gita\Bundle\CoreBundle\Entity\Widget);
         */
     }
 

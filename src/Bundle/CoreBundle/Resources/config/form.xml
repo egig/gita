@@ -6,12 +6,12 @@
 
     <services>
 
-        <service id="dtsystem.form.type.system" class="drafterbit\Bundle\CoreBundle\Form\Type\SystemType">
+        <service id="dtsystem.form.type.system" class="gita\Bundle\CoreBundle\Form\Type\SystemType">
             <tag name="form.type" />
             <argument type="service" id="service_container" />
         </service>
 
-        <service id="dtsystem.form.type.frontpage" class="drafterbit\Bundle\CoreBundle\Form\Type\FrontpageType">
+        <service id="dtsystem.form.type.frontpage" class="gita\Bundle\CoreBundle\Form\Type\FrontpageType">
             <tag name="form.type" />
             <argument type="service" id="service_container" />
         </service>

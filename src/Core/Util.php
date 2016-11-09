@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Core;
+namespace gita\Core;
 
 class Util
 {

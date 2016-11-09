@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\UserBundle\Controller;
+namespace gita\Bundle\UserBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -8,8 +8,8 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Method;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
-use drafterbit\Bundle\UserBundle\Entity\Group;
-use drafterbit\Bundle\UserBundle\Form\Type\GroupType;
+use gita\Bundle\UserBundle\Entity\Group;
+use gita\Bundle\UserBundle\Form\Type\GroupType;
 
 class GroupController extends Controller
 {

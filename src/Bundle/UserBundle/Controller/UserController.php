@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\UserBundle\Controller;
+namespace gita\Bundle\UserBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
@@ -8,9 +8,9 @@ use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
-use drafterbit\Bundle\UserBundle\Form\Type\UserType;
-use drafterbit\Bundle\UserBundle\Form\Type\ProfileType;
-use drafterbit\Bundle\UserBundle\Entity\User;
+use gita\Bundle\UserBundle\Form\Type\UserType;
+use gita\Bundle\UserBundle\Form\Type\ProfileType;
+use gita\Bundle\UserBundle\Entity\User;
 
 class UserController extends Controller
 {

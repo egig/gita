@@ -1,11 +1,11 @@
 <?php
 
-namespace drafterbit\Bundle\UserBundle\DataFixtures\ORM;
+namespace gita\Bundle\UserBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use drafterbit\Bundle\UserBundle\Entity\User;
+use gita\Bundle\UserBundle\Entity\User;
 use Symfony\Component\DependencyInjection\ContainerAwareInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
@@ -30,7 +30,7 @@ class LoadUserData extends AbstractFixture implements OrderedFixtureInterface, C
     public function load(ObjectManager $manager)
     {
         $username = 'admin';
-        $email = 'admin@drafterbit.org';
+        $email = 'admin@gita.org';
         $password = 'admin';
 
         if ($this->container->has('installer')) {

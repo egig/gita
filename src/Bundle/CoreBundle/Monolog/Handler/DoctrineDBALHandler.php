@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Monolog\Handler;
+namespace gita\Bundle\CoreBundle\Monolog\Handler;
 
 use Monolog\Logger;
 use Monolog\Handler\AbstractProcessingHandler;

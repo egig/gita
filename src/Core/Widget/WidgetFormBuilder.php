@@ -1,10 +1,10 @@
 <?php
 
-namespace drafterbit\Core\Widget;
+namespace gita\Core\Widget;
 
 use Symfony\Component\Form\FormView;
 use Symfony\Component\DependencyInjection\Container;
-use drafterbit\Bundle\CoreBundle\Form\Type\WidgetType;
+use gita\Bundle\CoreBundle\Form\Type\WidgetType;
 
 class WidgetFormBuilder
 {

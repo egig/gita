@@ -1,9 +1,9 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\System\Widget;
+namespace gita\Bundle\CoreBundle\System\Widget;
 
 use Symfony\Component\Form\Form;
-use drafterbit\Core\Widget\Widget;
+use gita\Core\Widget\Widget;
 
 class SearchWidget extends Widget
 {

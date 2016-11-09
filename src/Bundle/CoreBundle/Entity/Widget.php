@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Entity;
+namespace gita\Bundle\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  *
  * @ORM\Table("widget")
  * @ORM\Entity
- * @ORM\Entity(repositoryClass="drafterbit\Bundle\CoreBundle\Repository\WidgetRepository")
+ * @ORM\Entity(repositoryClass="gita\Bundle\CoreBundle\Repository\WidgetRepository")
  */
 class Widget
 {

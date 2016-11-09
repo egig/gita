@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\PageBundle\Entity;
+namespace gita\Bundle\PageBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -25,7 +25,7 @@ class Page
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="\drafterbit\Bundle\UserBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="\gita\Bundle\UserBundle\Entity\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      **/
     private $user;

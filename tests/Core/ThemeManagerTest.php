@@ -1,9 +1,9 @@
 <?php
 
-namespace drafterbit\Core\Tests;
+namespace gita\Core\Tests;
 
-use drafterbit\Core\ThemeManager;
-use drafterbit\Drafterbit;
+use gita\Core\ThemeManager;
+use gita\Gita;
 
 class ThemeManagerTest extends \PHPUnit_Framework_testCase
 {
@@ -11,7 +11,7 @@ class ThemeManagerTest extends \PHPUnit_Framework_testCase
 
 		$tm  = new  ThemeManager();
 
-		$this->assertTrue(in_array(Drafterbit::getCoreThemePath(), $tm->getPaths()));
+		$this->assertTrue(in_array(Gita::getCoreThemePath(), $tm->getPaths()));
 	}
 
 	function testAddPath() {

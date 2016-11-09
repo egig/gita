@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Core\Widget;
+namespace gita\Core\Widget;
 
 class WidgetManager
 {
@@ -14,7 +14,7 @@ class WidgetManager
     /**
      * Register a widget;.
      *
-     * @param drafterbit\WidgetInterface $widget
+     * @param gita\WidgetInterface $widget
      */
     public function register(WidgetInterface $widget)
     {
@@ -26,7 +26,7 @@ class WidgetManager
      *
      * @param string $nameegis
      *
-     * @return drafterbit\WidgetInterface
+     * @return gita\WidgetInterface
      */
     public function get($name)
     {

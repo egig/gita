@@ -1,8 +1,8 @@
 <?php
 
-namespace drafterbit\Core\Tests;
+namespace gita\Core\Tests;
 
-use drafterbit\Core\Application;
+use gita\Core\Application;
 
 class ApplicationTest extends \PHPUnit_Framework_testCase
 {

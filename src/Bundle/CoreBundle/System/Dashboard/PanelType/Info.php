@@ -1,8 +1,8 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\System\Dashboard\PanelType;
+namespace gita\Bundle\CoreBundle\System\Dashboard\PanelType;
 
-use drafterbit\Core\Dashboard\PanelType;
+use gita\Core\Dashboard\PanelType;
 
 class Info extends PanelType
 {

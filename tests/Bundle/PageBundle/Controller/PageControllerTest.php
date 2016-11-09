@@ -1,9 +1,9 @@
 <?php
 
-namespace drafterbit\Bundle\PageBundle\Tests\Controller;
+namespace gita\Bundle\PageBundle\Tests\Controller;
 
 use Symfony\Component\HttpFoundation\Response;
-use drafterbit\Test\WebTestCase;
+use gita\Test\WebTestCase;
 
 class PageControllerTest extends WebTestCase
 {

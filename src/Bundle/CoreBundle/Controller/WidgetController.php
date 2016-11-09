@@ -1,13 +1,13 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Controller;
+namespace gita\Bundle\CoreBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-use drafterbit\Bundle\CoreBundle\Entity\Widget;
-use drafterbit\Bundle\CoreBundle\Form\Type\WidgetType;
+use gita\Bundle\CoreBundle\Entity\Widget;
+use gita\Bundle\CoreBundle\Form\Type\WidgetType;
 
 class WidgetController extends Controller
 {

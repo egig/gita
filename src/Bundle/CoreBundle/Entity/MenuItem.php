@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Entity;
+namespace gita\Bundle\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Validator\Constraints as Assert;
@@ -23,7 +23,7 @@ class MenuItem
     private $id;
 
     /**
-     * @ORM\ManyToOne(targetEntity="\drafterbit\Bundle\CoreBundle\Entity\Menu")
+     * @ORM\ManyToOne(targetEntity="\gita\Bundle\CoreBundle\Entity\Menu")
      * @ORM\JoinColumn(name="menu_id", referencedColumnName="id")
      */
     private $menu;
@@ -51,7 +51,7 @@ class MenuItem
     private $sequence;
 
     /**
-     * @ORM\ManyToOne(targetEntity="\drafterbit\Bundle\CoreBundle\Entity\MenuItem")
+     * @ORM\ManyToOne(targetEntity="\gita\Bundle\CoreBundle\Entity\MenuItem")
      * @ORM\JoinColumn(name="parent_id", referencedColumnName="id")
      */
     private $parent;

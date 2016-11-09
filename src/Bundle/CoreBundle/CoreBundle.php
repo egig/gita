@@ -1,18 +1,18 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle;
+namespace gita\Bundle\CoreBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use drafterbit\Bundle\CoreBundle\DependencyInjection\Compiler\LogDisplayFormatterPass;
-use drafterbit\Bundle\CoreBundle\DependencyInjection\Compiler\ApplicationRoutePass;
-use drafterbit\Bundle\CoreBundle\DependencyInjection\Compiler\DashboardPass;
-use drafterbit\Bundle\CoreBundle\DependencyInjection\Compiler\WidgetPass;
-use drafterbit\Bundle\CoreBundle\DependencyInjection\Compiler\SearchQueryProviderPass;
-use drafterbit\Bundle\CoreBundle\DependencyInjection\Compiler\SettingFieldPass;
-use drafterbit\Bundle\CoreBundle\DependencyInjection\Compiler\WebDebugToolbarPass;
-use drafterbit\Bundle\CoreBundle\DependencyInjection\Compiler\AdminRoutePass;
-use drafterbit\Bundle\CoreBundle\DependencyInjection\Compiler\AddThemePathPass;
+use gita\Bundle\CoreBundle\DependencyInjection\Compiler\LogDisplayFormatterPass;
+use gita\Bundle\CoreBundle\DependencyInjection\Compiler\ApplicationRoutePass;
+use gita\Bundle\CoreBundle\DependencyInjection\Compiler\DashboardPass;
+use gita\Bundle\CoreBundle\DependencyInjection\Compiler\WidgetPass;
+use gita\Bundle\CoreBundle\DependencyInjection\Compiler\SearchQueryProviderPass;
+use gita\Bundle\CoreBundle\DependencyInjection\Compiler\SettingFieldPass;
+use gita\Bundle\CoreBundle\DependencyInjection\Compiler\WebDebugToolbarPass;
+use gita\Bundle\CoreBundle\DependencyInjection\Compiler\AdminRoutePass;
+use gita\Bundle\CoreBundle\DependencyInjection\Compiler\AddThemePathPass;
 
 class CoreBundle extends Bundle
 {

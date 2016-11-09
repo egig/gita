@@ -7,25 +7,25 @@
     <services>
 
         <!-- widget -->
-        <service id="dt_system.widget.form_builder" class="drafterbit\Core\Widget\WidgetFormBuilder">
+        <service id="dt_system.widget.form_builder" class="gita\Core\Widget\WidgetFormBuilder">
             <argument type="service" id="service_container" />
         </service>
 
-        <service id="dt_system.widget.manager" class="drafterbit\Core\Widget\WidgetManager">
+        <service id="dt_system.widget.manager" class="gita\Core\Widget\WidgetManager">
             <argument type="service" id="service_container" />
         </service>
 
-        <service id="dt_system.widget.search" class="drafterbit\Bundle\CoreBundle\System\Widget\SearchWidget">
-            <argument type="service" id="service_container" />
-            <tag name="dt_system.widget" />
-        </service>
-
-        <service id="dt_system.widget.text" class="drafterbit\Bundle\CoreBundle\System\Widget\TextWidget">
+        <service id="dt_system.widget.search" class="gita\Bundle\CoreBundle\System\Widget\SearchWidget">
             <argument type="service" id="service_container" />
             <tag name="dt_system.widget" />
         </service>
 
-        <service id="dt_system.widget.meta" class="drafterbit\Bundle\CoreBundle\System\Widget\MetaWidget">
+        <service id="dt_system.widget.text" class="gita\Bundle\CoreBundle\System\Widget\TextWidget">
+            <argument type="service" id="service_container" />
+            <tag name="dt_system.widget" />
+        </service>
+
+        <service id="dt_system.widget.meta" class="gita\Bundle\CoreBundle\System\Widget\MetaWidget">
             <argument type="service" id="service_container" />
             <tag name="dt_system.widget" />
         </service>

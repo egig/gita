@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\UserBundle\Form\Type;
+namespace gita\Bundle\UserBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;

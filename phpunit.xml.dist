@@ -12,7 +12,7 @@
     </php>
 
     <testsuites>
-        <testsuite name="drafterbit Test Suite">
+        <testsuite name="gita Test Suite">
             <directory>./tests</directory>
         </testsuite>
     </testsuites>

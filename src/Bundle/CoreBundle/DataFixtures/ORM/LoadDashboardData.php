@@ -1,11 +1,11 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\DataFixtures\ORM;
+namespace gita\Bundle\CoreBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use drafterbit\Bundle\CoreBundle\Entity\Panel;
+use gita\Bundle\CoreBundle\Entity\Panel;
 
 class LoadDashboardData extends AbstractFixture implements OrderedFixtureInterface
 {

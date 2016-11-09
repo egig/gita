@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle;
+namespace gita\Bundle\CoreBundle;
 
 class Installer
 {

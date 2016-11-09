@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\EventListener;
+namespace gita\Bundle\CoreBundle\EventListener;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 use Symfony\Component\HttpKernel\Event\FilterControllerEvent;
@@ -35,7 +35,7 @@ class FrontendListener implements EventSubscriberInterface
         $request = $event->getRequest();
 
         $admin = $this->container->getParameter('admin');
-        $themeManager = $this->container->get('drafterbit.theme_manager');
+        $themeManager = $this->container->get('gita.theme_manager');
 
         // If the page requested is not admin area then we
         // change theme path according to theme and add

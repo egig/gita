@@ -1,9 +1,9 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Twig\Extension;
+namespace gita\Bundle\CoreBundle\Twig\Extension;
 
 use Symfony\Component\DependencyInjection\Container;
-use drafterbit\Bundle\CoreBundle\CoreBundle;
+use gita\Bundle\CoreBundle\CoreBundle;
 
 class SystemExtension extends \Twig_Extension implements \Twig_Extension_GlobalsInterface
 {
@@ -22,7 +22,7 @@ class SystemExtension extends \Twig_Extension implements \Twig_Extension_Globals
             'navigations' => $this->getNavigations(),
             'sitename' => $model->get('system.site_name'),
             'tagline' => $model->get('system.site_description'),
-            'version' => \drafterbit\Drafterbit::VERSION,
+            'version' => \gita\Gita::VERSION,
         ];
 
         return ['system' => $system, 'theme' => $model->get('theme.active')];

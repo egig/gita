@@ -1,9 +1,9 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\System\Dashboard\PanelType;
+namespace gita\Bundle\CoreBundle\System\Dashboard\PanelType;
 
-use drafterbit\Core\Dashboard\PanelType;
-use drafterbit\Core\Extension\Shortcut as ShortcutItem;
+use gita\Core\Dashboard\PanelType;
+use gita\Core\Extension\Shortcut as ShortcutItem;
 
 class Shortcut extends PanelType
 {

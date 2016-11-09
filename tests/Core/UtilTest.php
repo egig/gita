@@ -1,7 +1,7 @@
 <?php
 
-namespace drafterbit\Core\Tests;
-use drafterbit\Core\Util;
+namespace gita\Core\Tests;
+use gita\Core\Util;
 
 class UtilTest extends \PHPUnit_Framework_TestCase
 {

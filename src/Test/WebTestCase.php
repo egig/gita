@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Test;
+namespace gita\Test;
 
 use Symfony\Component\BrowserKit\Client;
 use Symfony\Component\BrowserKit\Cookie;

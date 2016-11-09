@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Core\Setting;
+namespace gita\Core\Setting;
 
 interface FieldInterface
 {

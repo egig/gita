@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Controller;
+namespace gita\Bundle\CoreBundle\Controller;
 
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\HttpFoundation\Request;
@@ -11,8 +11,8 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Component\Security\Core\Exception\InvalidCsrfTokenException;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
-use drafterbit\Bundle\CoreBundle\Form\Type\ThemeType;
-use drafterbit\Core\Util;
+use gita\Bundle\CoreBundle\Form\Type\ThemeType;
+use gita\Core\Util;
 
 class SettingController extends Controller
 {
@@ -114,7 +114,7 @@ class SettingController extends Controller
     {
         $themes = [];
 
-        foreach ($this->get('drafterbit.theme_manager')->getPaths() as $themes_path) {
+        foreach ($this->get('gita.theme_manager')->getPaths() as $themes_path) {
             $dirs = (new Finder())->in($themes_path)->directories()->depth(0);
 
             foreach ($dirs as $dir) {

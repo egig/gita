@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\UserBundle\DependencyInjection;
+namespace gita\Bundle\UserBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

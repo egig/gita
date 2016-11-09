@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Entity;
+namespace gita\Bundle\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 
@@ -43,7 +43,7 @@ class Panel
     private $type;
 
     /**
-     * @ORM\ManyToOne(targetEntity="\drafterbit\Bundle\UserBundle\Entity\User")
+     * @ORM\ManyToOne(targetEntity="\gita\Bundle\UserBundle\Entity\User")
      * @ORM\JoinColumn(name="user_id", referencedColumnName="id")
      */
     private $user;

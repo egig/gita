@@ -1,10 +1,10 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\DependencyInjection\Compiler;
+namespace gita\Bundle\CoreBundle\DependencyInjection\Compiler;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
-use drafterbit\Bundle\CoreBundle\EventListener\WebDebugToolbarListener;
+use gita\Bundle\CoreBundle\EventListener\WebDebugToolbarListener;
 
 class WebDebugToolbarPass implements CompilerPassInterface
 {

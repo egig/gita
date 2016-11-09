@@ -1,11 +1,11 @@
 <?php
 
-namespace drafterbit\Bundle\PageBundle\DataFixtures\ORM;
+namespace gita\Bundle\PageBundle\DataFixtures\ORM;
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
 use Doctrine\Common\DataFixtures\OrderedFixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
-use drafterbit\Bundle\PageBundle\Entity\Page;
+use gita\Bundle\PageBundle\Entity\Page;
 
 class LoadSamplePageData extends AbstractFixture implements OrderedFixtureInterface
 {

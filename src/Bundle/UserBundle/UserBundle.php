@@ -1,10 +1,10 @@
 <?php
 
-namespace drafterbit\Bundle\UserBundle;
+namespace gita\Bundle\UserBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
-use drafterbit\Bundle\UserBundle\DependencyInjection\Compiler\AdminRoutePass;
+use gita\Bundle\UserBundle\DependencyInjection\Compiler\AdminRoutePass;
 
 class UserBundle extends Bundle
 {

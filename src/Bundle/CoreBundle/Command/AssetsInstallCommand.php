@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace drafterbit\Bundle\CoreBundle\Command;
+namespace gita\Bundle\CoreBundle\Command;
 
 use Symfony\Component\Console\Helper\Table;
 use Symfony\Component\Console\Input\InputInterface;
@@ -152,7 +152,7 @@ EOT
         // during this operation
 
         try {
-            $themesPath = $this->getContainer()->get('drafterbit.theme_manager')->getPaths();
+            $themesPath = $this->getContainer()->get('gita.theme_manager')->getPaths();
 
             $theme = $this->getContainer()->get('system')->get('theme.active', 'feather');
 

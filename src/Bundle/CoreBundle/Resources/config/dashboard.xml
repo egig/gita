@@ -6,16 +6,16 @@
 
     <services>
         <!-- Dahboard and Panels -->
-        <service id="dt_system.dashboard_manager" class="drafterbit\Core\Dashboard\DashboardManager"/>
+        <service id="dt_system.dashboard_manager" class="gita\Core\Dashboard\DashboardManager"/>
 
         <service id="dashboard" alias="dt_system.dashboard_manager"/>
 
-        <service id="dt_system.dashboard.panel.log" class="drafterbit\Bundle\CoreBundle\System\Dashboard\PanelType\Log">
+        <service id="dt_system.dashboard.panel.log" class="gita\Bundle\CoreBundle\System\Dashboard\PanelType\Log">
             <argument type="service" id="service_container" />
             <tag name="dt_system.dashboard.panel" />
         </service>
 
-        <service id="dt_system.dashboard.panel.info" class="drafterbit\Bundle\CoreBundle\System\Dashboard\PanelType\Info">
+        <service id="dt_system.dashboard.panel.info" class="gita\Bundle\CoreBundle\System\Dashboard\PanelType\Info">
             <argument type="service" id="service_container" />
             <tag name="dt_system.dashboard.panel" />
         </service>

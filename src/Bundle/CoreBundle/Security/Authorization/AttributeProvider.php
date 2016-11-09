@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Security\Authorization;
+namespace gita\Bundle\CoreBundle\Security\Authorization;
 
 use Symfony\Component\HttpKernel\Kernel;
 

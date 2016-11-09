@@ -1,8 +1,8 @@
 <?php
 
-namespace drafterbit\Bundle\UserBundle\System\Log;
+namespace gita\Bundle\UserBundle\System\Log;
 
-use drafterbit\Core\Log\BaseEntityFormatter;
+use gita\Core\Log\BaseEntityFormatter;
 
 class GroupEntityFormatter extends BaseEntityFormatter
 {

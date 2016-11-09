@@ -1,8 +1,8 @@
 <?php
 
-namespace drafterbit;
+namespace gita;
 
-class Drafterbit
+class Gita
 {
     const VERSION = '0.4.0';
     const MAJOR_VERSION = 0;
@@ -17,7 +17,7 @@ class Drafterbit
      * Get core themes path. Default relative to this file.
      *
      * @return string
-     * @author 
+     * @author
      **/
  	public static function getCoreThemePath() {
 

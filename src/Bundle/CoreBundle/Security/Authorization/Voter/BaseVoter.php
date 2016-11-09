@@ -1,11 +1,11 @@
 <?php
 // src/AppBundle/Security/Authorization/Voter/PostVoter.php
-namespace drafterbit\Bundle\CoreBundle\Security\Authorization\Voter;
+namespace gita\Bundle\CoreBundle\Security\Authorization\Voter;
 
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Component\Security\Core\Authorization\Voter\VoterInterface;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
-use drafterbit\Bundle\CoreBundle\Security\Authorization\AttributeProvider;
+use gita\Bundle\CoreBundle\Security\Authorization\AttributeProvider;
 
 class BaseVoter implements VoterInterface
 {

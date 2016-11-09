@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Core\Widget;
+namespace gita\Core\Widget;
 
 interface WidgetInterface
 {

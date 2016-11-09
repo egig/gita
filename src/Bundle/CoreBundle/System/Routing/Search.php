@@ -1,9 +1,9 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\System\Routing;
+namespace gita\Bundle\CoreBundle\System\Routing;
 
-use drafterbit\Core\Application;
-use drafterbit\Core\FrontPageApplicationInterface;
+use gita\Core\Application;
+use gita\Core\FrontPageApplicationInterface;
 
 class Search extends Application implements FrontPageApplicationInterface
 {

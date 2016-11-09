@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Model;
+namespace gita\Bundle\CoreBundle\Model;
 
 use Doctrine\DBAL\Connection;
 

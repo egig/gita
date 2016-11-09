@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Core\Widget;
+namespace gita\Core\Widget;
 
 use Symfony\Component\DependencyInjection\Container;
 use Symfony\Component\Form\FormView;

@@ -1,9 +1,9 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\System\Widget;
+namespace gita\Bundle\CoreBundle\System\Widget;
 
 use Symfony\Component\Form\Form;
-use drafterbit\Core\Widget\Widget;
+use gita\Core\Widget\Widget;
 
 class MetaWidget extends Widget
 {
@@ -18,7 +18,7 @@ class MetaWidget extends Widget
         $admin = $this->container->getParameter('admin');
         $items = [
             ['link' => $baseUrl.'/'.$admin, 'label' => 'Site Admin'],
-            ['link' => 'http://drafterbit', 'label' => 'drafterbit.org'],
+            ['link' => 'http://gita', 'label' => 'gita.org'],
         ];
 
         $data['items'] = $items;

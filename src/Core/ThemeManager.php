@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Core;
+namespace gita\Core;
 
 use Symfony\Component\Finder\Finder;
 
@@ -28,7 +28,7 @@ class ThemeManager {
 	 **/
 	public function __construct()
 	{
-		$this->themesPath[] = \drafterbit\Drafterbit::getCoreThemePath();
+		$this->themesPath[] = \gita\Gita::getCoreThemePath();
 
 		$this->initialize();
 	}

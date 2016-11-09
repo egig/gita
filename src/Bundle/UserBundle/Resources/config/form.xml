@@ -4,7 +4,7 @@
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
     <services>
-        <service id="dtuser.form.type.group" class="drafterbit\Bundle\UserBundle\Form\Type\GroupType">
+        <service id="dtuser.form.type.group" class="gita\Bundle\UserBundle\Form\Type\GroupType">
             <argument type="service" id="service_container" />
             <tag name="form.type" />
         </service>

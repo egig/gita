@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Doctrine\Subscriber;
+namespace gita\Bundle\CoreBundle\Doctrine\Subscriber;
 
 use Doctrine\ORM\Event\LoadClassMetadataEventArgs;
 

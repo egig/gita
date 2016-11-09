@@ -1,14 +1,14 @@
 <?php
 
-namespace drafterbit\Bundle\PageBundle\Controller;
+namespace gita\Bundle\PageBundle\Controller;
 
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
-use drafterbit\Bundle\PageBundle\Form\Type\PageType;
-use drafterbit\Bundle\PageBundle\Entity\Page;
+use gita\Bundle\PageBundle\Form\Type\PageType;
+use gita\Bundle\PageBundle\Entity\Page;
 
 class PageController extends Controller
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace drafterbit\Core\Tests;
-use drafterbit\Core\ApplicationManager;
-use drafterbit\Core\Application;
+namespace gita\Core\Tests;
+use gita\Core\ApplicationManager;
+use gita\Core\Application;
 
 class ApplicationManagerTest extends \PHPUnit_Framework_testCase
 {

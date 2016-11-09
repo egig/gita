@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Twig\Extension;
+namespace gita\Bundle\CoreBundle\Twig\Extension;
 
 use Symfony\Component\HttpKernel\Kernel;
 

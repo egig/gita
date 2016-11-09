@@ -1,13 +1,13 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\DependencyInjection;
+namespace gita\Bundle\CoreBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\XmlFileLoader;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\Config\Definition\Processor;
-use drafterbit\Bundle\CoreBundle\CoreBundle;
+use gita\Bundle\CoreBundle\CoreBundle;
 
 class CoreExtension extends Extension
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Core\Dashboard;
+namespace gita\Core\Dashboard;
 
 use Symfony\Component\DependencyInjection\Container;
 

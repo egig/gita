@@ -76,7 +76,7 @@ CREATE TABLE `dt_comment` (
 
 LOCK TABLES `dt_comment` WRITE;
 /*!40000 ALTER TABLE `dt_comment` DISABLE KEYS */;
-INSERT INTO `dt_comment` VALUES (1,1,NULL,'admin','admin@drafterbit.org',NULL,NULL,'This is test comment.','2016-05-13 10:35:31','2016-05-13 10:35:31',NULL,0,1);
+INSERT INTO `dt_comment` VALUES (1,1,NULL,'admin','admin@gita.org',NULL,NULL,'This is test comment.','2016-05-13 10:35:31','2016-05-13 10:35:31',NULL,0,1);
 /*!40000 ALTER TABLE `dt_comment` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -437,7 +437,7 @@ CREATE TABLE `dt_user` (
 
 LOCK TABLES `dt_user` WRITE;
 /*!40000 ALTER TABLE `dt_user` DISABLE KEYS */;
-INSERT INTO `dt_user` VALUES (1,'admin','admin','admin@drafterbit.org','admin@drafterbit.org',1,'rrnuc3cokb4cww4sgkk0ko0kowo8sg4','wYr6ZYV8zgrOO3IGRufDJUBFyn02G502eDlJBhNeNu6ql5nZyCUYTZWdwTLddVOt/zog6nARESCEhjY2ciesUg==',NULL,0,0,NULL,NULL,NULL,'a:1:{i:0;s:10:\"ROLE_ADMIN\";}',0,NULL,'admin',NULL,NULL);
+INSERT INTO `dt_user` VALUES (1,'admin','admin','admin@gita.org','admin@gita.org',1,'rrnuc3cokb4cww4sgkk0ko0kowo8sg4','wYr6ZYV8zgrOO3IGRufDJUBFyn02G502eDlJBhNeNu6ql5nZyCUYTZWdwTLddVOt/zog6nARESCEhjY2ciesUg==',NULL,0,0,NULL,NULL,NULL,'a:1:{i:0;s:10:\"ROLE_ADMIN\";}',0,NULL,'admin',NULL,NULL);
 /*!40000 ALTER TABLE `dt_user` ENABLE KEYS */;
 UNLOCK TABLES;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\System\Routing;
+namespace gita\Bundle\CoreBundle\System\Routing;
 
-use drafterbit\Core\Application;
+use gita\Core\Application;
 
 class Admin extends Application
 {

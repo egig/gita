@@ -1,8 +1,8 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Tests\Monolog\Handler;
+namespace gita\Bundle\CoreBundle\Tests\Monolog\Handler;
 
-use drafterbit\Test\WebTestCase;
+use gita\Test\WebTestCase;
 
 class DoctrineDBALHandlerTest extends WebTestCase
 {

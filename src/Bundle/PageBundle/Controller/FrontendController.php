@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\PageBundle\Controller;
+namespace gita\Bundle\PageBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 

@@ -1,12 +1,12 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Tests\Controller;
+namespace gita\Bundle\CoreBundle\Tests\Controller;
 
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\BrowserKit\Cookie;
 
-use drafterbit\Test\WebTestCase;
+use gita\Test\WebTestCase;
 
 class MenuControllerTest extends WebTestCase
 {

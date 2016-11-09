@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\PageBundle\Form\Type;
+namespace gita\Bundle\PageBundle\Form\Type;
 
 use Symfony\Component\Finder\Finder;
 use Symfony\Component\Form\AbstractType;

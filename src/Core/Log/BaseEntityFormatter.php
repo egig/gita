@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Core\Log;
+namespace gita\Core\Log;
 
 use Symfony\Component\HttpKernel\Kernel;
 

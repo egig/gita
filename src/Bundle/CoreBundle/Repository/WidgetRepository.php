@@ -1,6 +1,6 @@
 <?php
 
-namespace drafterbit\Bundle\CoreBundle\Repository;
+namespace gita\Bundle\CoreBundle\Repository;
 
 use Doctrine\ORM\EntityRepository;
 
