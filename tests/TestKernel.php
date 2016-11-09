@@ -30,6 +30,8 @@ class TestKernel extends Kernel
         $bundles[] = new FOS\UserBundle\FOSUserBundle();
         $bundles[] = new Symfony\Bundle\AsseticBundle\AsseticBundle();
 
+        $bundles[] = new gita\Bundle\BlogBundle\BlogBundle();
+        $bundles[] = new gita\Bundle\FileBundle\FileBundle();
         $bundles[] = new gita\Bundle\PageBundle\PageBundle();
         $bundles[] = new gita\Bundle\UserBundle\UserBundle();
         $bundles[] = new gita\Bundle\CoreBundle\CoreBundle();

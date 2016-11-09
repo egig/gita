@@ -32,7 +32,7 @@ class LoadSystemData extends AbstractFixture implements ContainerAwareInterface,
     public function load(ObjectManager $manager)
     {
         $siteName = 'My Awesome Website';
-        $siteDescription = 'Just an Awesome DrafTerbit Website';
+        $siteDescription = 'Just an Awesome Gita Website';
 
         if ($this->container->has('installer')) {
             $data = $this->container->get('installer')->get('site');
