@@ -36,7 +36,7 @@
       // https://github.com/Studio-42/elFinder/wiki/Client-configuration-options
       $(document).ready(function() {
         $('#elfinder').elfinder({
-          url : '/elfinder/php/connector.minimal.php',  // connector URL (REQUIRED)
+          url : "{{ path("dt_file_data") }}",  // connector URL (REQUIRED)
           height : 600,
           uiOptions: {
               toolbar : [
