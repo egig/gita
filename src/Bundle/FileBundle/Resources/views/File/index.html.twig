@@ -2,17 +2,18 @@
 
 {% block stylesheets %}
   {{ parent() }}
+
   <link rel="stylesheet" type="text/css" href="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.0/themes/smoothness/jquery-ui.css">
 
   {% stylesheets
     '@elfinder_css'
     '@elfinder_theme_css'
+    '@CoreBundle/Resources/css/theme-bootstrap-libreicons-svg.css'
     filter='?uglifycss' output="assets/css/*.css"
   %}
     <link rel="stylesheet" href="{{ asset_url }}" />
   {% endstylesheets %}
 
-  <link rel="stylesheet" type="text/css" href="/assets/css/theme-bootstrap-libreicons-svg.css">
 {% endblock %}
 
 {% block content %}
@@ -29,7 +30,6 @@
     '@elfinder_js' %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts  %}
-
 
     <script type="text/javascript" charset="utf-8">
       // Documentation for client options:
