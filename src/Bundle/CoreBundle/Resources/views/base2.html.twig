@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{{ page_title|striptags }} | {{ system.sitename }}</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  {% block stylesheets %}
+    {% stylesheets
+      '@fontawesome'
+      '@notify_css'
+      '@CoreBundle/Resources/scss/gita-bootstrap.scss'
+      '@CoreBundle/Resources/scss/gita.scss'
+      '@adminlte_css'
+      '@adminlte_skin_blue_css'
+      filter='?uglifycss' output="assets/css/*.css"
+    %}
+      <link rel="stylesheet" href="{{ asset_url }}" />
+    {% endstylesheets %}
+  {% endblock %}
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body class="hold-transition skin-blue sidebar-mini layout-boxed">
+<!-- Site wrapper -->
+<div class="wrapper">
+
+  <header class="main-header">
+    <!-- Logo -->
+    <a href="{{ path('dt_system_dashboard') }}" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini">G</span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg">Git<b>a</b></span>
+    </a>
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+
+        <div class="dt-user-menu-container">
+         <ul class="nav pull-right">
+            <!-- /.dropdown -->
+            <li class="dropdown">
+                <a class=" navbar-link dropdown-toggle" data-toggle="dropdown" href="#">
+                    <img width="28px;" class="dt-profile-avatar" src="{{gravatar_url(app.user.email, 28)}}" alt="{{app.user.username}}"/>
+                    <!--<i class="fa fa-caret-down"></i>-->
+                </a>
+                <ul class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-caret">
+                        <span class="caret-outer"></span>
+                        <span class="caret-inner"></span>
+                    </div>
+                    <li> <a href="{{ base_url() }}" target="_blank">{{ __('Visit Site') }} <i class="fa fa-external-link"></i> </a> </li>
+                    <li><a href="{{ url('dt_user_profile') }}">Profile</a> </li>
+                    <li><a href="{{ url('dt_system_preferences') }}">Preferences</a> </li>
+                    <li><a href="{{ url('dt_user_security_logout') }}">{{ __('Logout') }}</a> </li>
+                </ul>
+                <!-- /.dropdown-user -->
+            </li>
+            <!-- /.dropdown -->
+        </ul>
+        </div>
+    </nav>
+  </header>
+
+  <!-- =============================================== -->
+
+  <!-- Left side column. contains the sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar">
+
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      {% include 'CoreBundle:Partials:nav2.html.twig' %}
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- =============================================== -->
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      {% block content_header %}
+        <h1>
+          Page Title
+          <small>Page Desctiption</small>
+        </h1>
+      {% endblock %}
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      {% block content %}{% endblock %}
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <footer class="main-footer">
+    <div class="pull-right hidden-xs">
+      <b>Version</b> 0.1.0
+    </div>
+    <strong>Copyright &copy; 2014-2016 <a href="http://egig.github.io/gita">Gita</a>.</strong> All rights
+    reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+{% block javascripts %}
+    {% javascripts
+     '@jquery'
+     '@bootstrap_js'
+     '@notify_js'
+     '@adminlte_app_js'
+
+    filter='?uglifyjs2' output="assets/js/*.js"
+    %}
+      <script src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+
+    <script src="{{ url('asset_dt_js') }}"></script>
+    <script src="{{ url('dt_system_asset_session_js') }}"></script>
+{% endblock %}
+
+</body>
+</html>

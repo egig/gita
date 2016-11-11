@@ -54,3 +54,9 @@ assetic:
             inputs: '%vendor_dir%/web/elfinder/css/elfinder.min.css'
         elfinder_theme_css:
             inputs: '%vendor_dir%/web/elfinder/css/theme.css'
+        adminlte_css:
+          inputs: '%vendor_dir%/web/adminlte/dist/css/AdminLTE.min.css'
+        adminlte_skin_blue_css:
+          inputs: '%vendor_dir%/web/adminlte/dist/css/skins/skin-blue.min.css'
+        adminlte_app_js:
+          inputs: '%vendor_dir%/web/adminlte/dist/js/app.min.js'

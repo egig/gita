@@ -1,4 +1,4 @@
-{% extends "CoreBundle::base.html.twig" %}
+{% extends "CoreBundle::base2.html.twig" %}
 
 {% block stylesheets %}
   {{ parent() }}
@@ -13,13 +13,17 @@
   %}
     <link rel="stylesheet" href="{{ asset_url }}" />
   {% endstylesheets %}
+{% endblock %}
 
+{% block content_header %}
+  <h1>
+    {{ __('Files') }}
+    <small>{{ __('Uploaded Files and other media') }}</small>
+  </h1>
 {% endblock %}
 
 {% block content %}
-<div class="container">
   <div id="elfinder"></div>
-</div>
 {% endblock %}
 
 

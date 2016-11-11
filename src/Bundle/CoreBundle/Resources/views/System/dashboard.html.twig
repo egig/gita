@@ -1,4 +1,4 @@
-{% extends "CoreBundle::base.html.twig" %}
+{% extends "CoreBundle::base2.html.twig" %}
 
 {% import _self as dashboard %}
 
@@ -9,22 +9,29 @@
     {% endstylesheets %}
 {% endblock %}
 
-{% block content %}
-    <div class="container">
-        <div class="row panel-container">
-            <div class="panel-row col-md-6" id="dt-panels-left" data-pos="left">
-                {% for panel in left_panels %}
-                    {{ dashboard.display_panel(panel) }}
-                {% endfor %}
-            </div>
+{% block content_header %}
+  <h1>
+    {{ __('Dashboard') }}
+    <small>{{ __('Summary and Recent Updates') }}</small>
+  </h1>
+{% endblock %}
 
-            <div class="panel-row col-md-6" id="dt-panels-right" data-pos="right">
-                {% for panel in right_panels %}
-                    {{ dashboard.display_panel(panel) }}
-                {% endfor %}
-            </div>
-        </div>
-    </div>
+{% block content %}
+  <!-- Default box -->
+  <div class="row panel-container">
+      <div class="panel-row col-md-6" id="dt-panels-left" data-pos="left">
+        {% for panel in left_panels %}
+            {{ dashboard.display_panel(panel) }}
+        {% endfor %}
+      </div>
+
+      <div class="panel-row col-md-6" id="dt-panels-right" data-pos="right">
+          {% for panel in right_panels %}
+              {{ dashboard.display_panel(panel) }}
+          {% endfor %}
+      </div>
+  </div>
+
     <div class="modal in" id="dt-panel-edit-modal">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -35,18 +42,32 @@
 {% endblock %}
 
 {% macro display_panel(panel) %}
-    <div  {% if panel.status == 0 %} style="display:none" {% endif %}  class="panel-item" id="dashboard-panel-{{ panel.name }}">
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">{{ panel.title }}</h3>
-            </div>
-            <div class="panel-body">
-                {% autoescape false %}
-                   {{ panel.view }}
-                {% endautoescape %}
-            </div>
-        </div>
+
+<div class="box panel-item"
+  {% if panel.status == 0 %} style="display:none" {% endif %}
+  id="dashboard-panel-{{ panel.name }}">
+  <div class="box-header with-border">
+    <h3 class="box-title">{{ panel.title }}</h3>
+
+    <div class="box-tools pull-right">
+      <button type="button" class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse">
+        <i class="fa fa-minus"></i></button>
+      <button type="button" class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove">
+        <i class="fa fa-times"></i></button>
     </div>
+  </div>
+  <div class="box-body">
+    {% autoescape false %}
+       {{ panel.view }}
+    {% endautoescape %}
+  </div>
+  <!-- /.box-body -->
+  <!--<div class="box-footer">
+    Footer
+  </div> -->
+  <!-- /.box-footer-->
+</div>
+<!-- /.box -->
 {% endmacro %}
 
 {% block javascripts %}
