@@ -1,5 +1,6 @@
 core:
     navigation:
         page:
+            icon: desktop
             label: Page
             route: dt_page

@@ -2,6 +2,7 @@ core:
     navigation:
         setting:
             label: Setting
+            icon: wrench
             children:
                 general:
                     label: General
@@ -11,6 +12,7 @@ core:
                     route: dt_system_setting_theme
         system:
             label: System
+            icon: gears
             children:
                 log:
                     label: Log

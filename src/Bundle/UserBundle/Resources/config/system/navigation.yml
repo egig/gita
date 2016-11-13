@@ -2,6 +2,7 @@ core:
     navigation:
         user:
             label: User
+            icon: users
             children:
                 user:
                     label: User

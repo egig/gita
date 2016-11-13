@@ -4,14 +4,14 @@
       {% if nav.children is defined and nav.children|length %}
         <li class="treeview">
           <a href="#">
-            <i class="fa fa-circle text-gray"></i> <span>{{ __(nav.label) }}</span>
+            <i class="fa fa-{{ nav.icon }} "></i> <span>{{ __(nav.label) }}</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
             {% for name,child in nav.children %}
-              <li><a id="nav-{{name}}" href="{{url(child.route)}}"><i class="fa fa-circle-o text-gray"></i> {{ __(child.label) }}</a></li>
+              <li><a id="nav-{{name}}" href="{{url(child.route)}}"><i class="fa fa-{{ child.icon }} "></i> {{ __(child.label) }}</a></li>
             {% endfor %}
           </ul>
         </li>
@@ -19,7 +19,7 @@
       {% else %}
         <li>
           <a id="nav-{{ n }}" class="navbar-link"  href="{{ url(nav.route) }}">
-            <i class="fa fa-circle text-gray"></i> <span>{{ __(nav.label) }}</span>
+            <i class="fa fa-{{ nav.icon }} "></i> <span>{{ __(nav.label) }}</span>
           </a>
         </li>
       {% endif %}

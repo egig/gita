@@ -2,6 +2,7 @@ core:
     navigation:
         blog:
             label: Blog
+            icon: edit
             children:
                 post:
                     label: Post

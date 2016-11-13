@@ -1,5 +1,6 @@
 core:
     navigation:
         file:
+            icon: folder-o
             label: Files
             route: dt_file
