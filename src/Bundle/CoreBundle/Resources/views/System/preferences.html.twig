@@ -1,4 +1,4 @@
-{% extends "CoreBundle::base.html.twig" %}
+{% extends "CoreBundle::base2.html.twig" %}
 
 {% block stylesheets %}
     {{ parent() }}
@@ -14,25 +14,27 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <ul id="dt-preferences-tab" class="nav nav-tabs tabs-left">
-                    <li role="presentation"><a href="#pref-dashboard" aria-controls="" role="tab" data-toggle="tab">Dashboard</a></li>
-                </ul>
-            </div>
-            <div class="col-md-9">
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane" id="pref-dashboard">
-                        <button data-toggle="modal" data-target="#dt-available-panels" type="button" class="btn btn-default btn-sm"><i class="fa fa-plus"></i> {{ __('Add Panel') }}</button>
-                        <div class="row dt-panels-container">
-                            
-                        </div>
+    <div class="box">
+      <div class="box-body">
+          <div class="row">
+              <div class="col-md-3">
+                  <ul id="dt-preferences-tab" class="nav nav-tabs tabs-left">
+                      <li role="presentation"><a href="#pref-dashboard" aria-controls="" role="tab" data-toggle="tab">Dashboard</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-9">
+                  <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane" id="pref-dashboard">
+                          <button data-toggle="modal" data-target="#dt-available-panels" type="button" class="btn btn-default btn-sm"><i class="fa fa-plus"></i> {{ __('Add Panel') }}</button>
+                          <div class="row dt-panels-container">
 
-                    </div>
-                </div>
-            </div>
-        </div>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
 
     <div class="modal in" id="dt-available-panels">
@@ -74,7 +76,7 @@
     {% javascripts
     '@jquery_form'
     '@bootstrap_tabcollapse'
-    '@CoreBundle/Resources/js/preferences.js' 
+    '@CoreBundle/Resources/js/preferences.js'
      filter='?uglifyjs2' output="assets/js/*.js"
     %}
     <script src="{{ asset_url }}"></script>

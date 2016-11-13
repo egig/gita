@@ -1,5 +1,12 @@
 {% extends "CoreBundle::base_edit.html.twig" %}
 
+{% block content_header %}
+  <h1>
+    Pages
+    <small>Static Pages</small>
+  </h1>
+{% endblock %}
+
 {% block action %}
     {{ form_widget(form.Save, {label:__('Save Page'), attr:{class:"btn btn-success"}}) }}
     <a class="btn btn-default" href="{{ url('dt_page') }}">

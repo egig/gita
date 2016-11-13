@@ -1,4 +1,4 @@
-{% extends "CoreBundle::base.html.twig" %}
+{% extends "CoreBundle::base2.html.twig" %}
 
 {% block stylesheets %}
     {{ parent() }}
@@ -11,8 +11,12 @@
 {% endblock %}
 
 {% block content %}
-<div class="container dt-themes-container">
-    <div class="row">
+  <div class="box  dt-themes-container">
+      <div class="box-header with-border">
+        <h3 class="box-title">{{ __('Themes') }}</h3>
+      </div>
+      <div class="box-body">
+        <div class="row">
         {% for theme in themes %}
             <div class="col-md-4">
                 <div class="dt-theme-item clearfix">
@@ -40,5 +44,6 @@
             </div>
         {% endfor %}
     </div>
+      </div>
 </div>
 {% endblock %}

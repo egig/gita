@@ -16,7 +16,7 @@
       '@CoreBundle/Resources/scss/gita-bootstrap.scss'
       '@CoreBundle/Resources/scss/gita.scss'
       '@adminlte_css'
-      '@adminlte_skin_light_css'
+      '@adminlte_skin_blue_css'
       filter='?uglifycss' output="assets/css/*.css"
     %}
       <link rel="stylesheet" href="{{ asset_url }}" />
@@ -30,7 +30,7 @@
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
 </head>
-<body class="hold-transition skin-black-light sidebar-mini layout-boxed">
+<body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
 
@@ -121,6 +121,14 @@
 <!-- ./wrapper -->
 
 {% block javascripts %}
+
+<script>
+  var AdminLTEOptions = {
+    sidebarExpandOnHover: true,
+    animationSpeed: "fast"
+  };
+</script>
+
     {% javascripts
      '@jquery'
      '@bootstrap_js'

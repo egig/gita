@@ -1,4 +1,4 @@
-{% extends "CoreBundle::base.html.twig" %}
+{% extends "CoreBundle::base2.html.twig" %}
 
 {% block stylesheets %}
     {{ parent() }}
@@ -9,22 +9,32 @@
     {% endstylesheets %}
 {% endblock %}
 
-{% block content %}
-    {{ form_start(form, {attr:{id: view_id~"-form"}, action: action}) }}
-        <div class="sticky-toolbar-wrapper" id="sticky-toolbar">
-            <div class="container">
-                <div class="row dt-row-sticky-toolbar">
-                    <div class="col-md-12">
-                        {% block action %} {% endblock %}
-                    </div>
-                </div>
-            </div>
-        </div>
+{% block content_header %}
+  <h1>
+    Edit Page
+    <small>Edit Page</small>
+  </h1>
+{% endblock %}
 
-        <div class="container">
-            {% block form %}{% endblock %}
-         </div>
-    {{ form_end(form) }}
+{% block content %}
+
+<div class="box">
+    <div class="box-header with-border">
+      <h3 class="box-title">{{ __('Edit Page') }}</h3>
+    </div>
+    <div class="box-body">
+      {{ form_start(form, {attr:{id: view_id~"-form"}, action: action}) }}
+          <div class="row dt-row-sticky-toolbar">
+              <div class="col-md-12">
+                  {% block action %} {% endblock %}
+              </div>
+          </div>
+
+          {% block form %}{% endblock %}
+      {{ form_end(form) }}
+    </div>
+</div>
+
 {% endblock %}
 
  {% block javascripts %}

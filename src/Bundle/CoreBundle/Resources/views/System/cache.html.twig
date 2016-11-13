@@ -1,4 +1,4 @@
-{% extends "CoreBundle::base.html.twig" %}
+{% extends "CoreBundle::base2.html.twig" %}
 
 {% block stylesheets %}
     {{ parent() }}
@@ -9,7 +9,8 @@
 
 
 {% block content %}
-<div class="container">
+<div class="box">
+<div class="box-body">
     <div class="row dt-cache-toolbar">
         {% if is_granted('ROLE_CACHE_RENEW') %}
         <div class="col-md-8">
@@ -39,6 +40,7 @@
             </table>
         </div>
     </div>
+</div>
 </div>
 
 {% endblock %}
