@@ -49,7 +49,7 @@
 
                 drafTerbit.replaceDTSearch(drafTerbit.user.dt);
 
-                  $('#users-checkall').checkAll({showIndeterminate:true});
+                $('#users-checkall').checkAll({showIndeterminate:true});
             },
 
             handleIndexForm: function(formSelector) {

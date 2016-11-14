@@ -1,5 +1,11 @@
 {% extends "CoreBundle::base_index.html.twig" %}
 
+{% block content_header %}
+  <h1> {{ __('Logs') }} <small>{{ __('Logs') }}</small> </h1>
+{% endblock %}
+
+{% block box_title %} {{ __('Logs') }} {% endblock %}
+
 {% block action %}
         {% if is_granted('ROLE_LOG_DELETE') %}
             <button class="btn btn-default" type="submit" name="action" value="delete">{{ __('Delete') }}</button>

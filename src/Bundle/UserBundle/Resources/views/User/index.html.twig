@@ -1,32 +1,22 @@
 {% extends "CoreBundle::base_index.html.twig" %}
 
-{% block filter %}
-    <select name="status-filter" class="dt-table-filter form-control filter user-status-filter">
-        <option value="all" selected >- Status -</option>
-        <option value="enabled" >{{ __('Enabled') }}</option>
-        <option value="disabled" >{{ __('Disabled') }}</option>
-    </select>
-    <select name="group-filter" class="dt-table-filter form-control filter user-group-filter">
-        <option value="0" >- {{ __('Group') }} -</option>
-        {% for group in groups %}
-        <option value="{{ group.id }}">{{ group.name }}</option>
-        {% endfor %}
-    </select>
+{% block content_header %}
+  <h1> {{ __("User") }} <small>{{ __("User Management") }}</small> </h1>
 {% endblock %}
 
-{% block action %}
-    {% if is_granted('ROLE_USER_CREATE') %}
-        <a href="{{path('dt_user_edit', {id:'new'})}}" class="btn btn-success">
-            <i class="fa fa-plus" style=""></i> {{ __('New User') }}
-        </a>
-    {% endif %}
+{% block box_title %}{{ __("User List") }}{% endblock %}
 
+{% block action %}
     {% if is_granted('ROLE_USER_DELETE') %}
-        <button class="btn btn-default uncreate-action" type="submit" name="action" value="delete">
+        <button class="btn btn-default btn-sm" type="submit" name="action" value="delete">
             <i class="fa fa-trash-o"></i> {{ __('Delete') }}
         </button>
     {% endif %}
-
+    {% if is_granted('ROLE_USER_CREATE') %}
+        <a href="{{path('dt_user_edit', {id:'new'})}}" class="btn btn-success btn-sm">
+            <i class="fa fa-plus" style=""> </i> {{ __('New') }}
+        </a>
+    {% endif %}
 {% endblock %}
 
 {% block table %}
@@ -36,9 +26,9 @@
                 <th class="all sorting" width="15">
                     <input id="users-checkall" type="checkbox">
                 </th>
-                <th class="desktop">{{ __('Name') }}</th>
-                <th class="all">{{ __('Email') }}</th>
-                <th class="all">{{ __('Status') }}</th>
+                <th width="" class="desktop">{{ __('Name') }}</th>
+                <th width="300" class="all">{{ __('Email') }}</th>
+                <th width="20" class="all">{{ __('Status') }}</th>
             </tr>
         </thead>
     </table>
@@ -55,5 +45,43 @@
         drafTerbit.user.handleIndexTable('#users-data-table');
         drafTerbit.user.handleIndexForm('#user-index-form');
         drafTerbit.user.listenTableFilter('.user-status-filter', '.user-group-filter', '.filter');
+
+        $('#add-filter').popover({
+          html: true,
+          content: function() {
+            return $('#popover-content').html();
+          }
+        });
+    </script>
+    <script type="text/popover-content" id="popover-content">
+    <form class="form-inline">
+      <div class="form-group">
+        <select class="form-control input-sm" name="">
+          <option value="option">{{ __("Username") }}</option>
+          <option value="option">{{ __("Real Name") }}</option>
+          <option value="option">{{ __("Email") }}</option>
+          <option value="option">{{ __("Status") }}</option>
+          <option value="option">{{ __("Group") }}</option>
+          <option value="option">{{ __("URL") }}</option>
+          <option value="option">{{ __("Bio") }}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <select class="form-control input-sm" name="">
+          <option value="option">{{ __("is equal to") }}</option>
+          <option value="option">{{ __("is not equal to") }}</option>
+          <option value="option">{{ __("contains") }}</option>
+          <option value="option">{{ __("does not contain") }}</option>
+          <option value="option">{{ __("is empty") }}</option>
+          <option value="option">{{ __("is not empty") }}</option>
+          <option value="option">{{ __("between") }}</option>
+          <option value="option">{{ __("is not between") }}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="text" name="name" value="" class="form-control input-sm">
+      </div>
+      <button type="button" name="button" class="btn btn-primary btn-sm">{{ __("Add Filter") }}</i></button>
+      </form>
     </script>
 {% endblock %}

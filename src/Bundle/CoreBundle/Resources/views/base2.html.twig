@@ -29,6 +29,21 @@
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->
+
+  <style media="screen">
+  .content-header > .content-help {
+      background: transparent none repeat scroll 0 0;
+      border-radius: 2px;
+      float: right;
+      font-size: 14px;
+      margin-bottom: 0;
+      margin-top: 0;
+      padding: 7px 5px;
+      position: absolute;
+      right: 10px;
+      top: 15px;
+    }
+  </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <!-- Site wrapper -->
@@ -95,11 +110,11 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       {% block content_header %}
-        <h1>
-          Page Title
-          <small>Page Desctiption</small>
-        </h1>
+        <h1> Page Title <small>Page Desctiption</small> </h1>
       {% endblock %}
+      <div class="content-help" style="float:right;">
+        <a href="#">Help ?</a>
+      </div>
     </section>
 
     <!-- Main content -->

@@ -10,31 +10,40 @@
         filter='?uglifycss' output="assets/css/*.css"
     %}
     <link rel="stylesheet" href="{{ asset_url }}" />
+    <style media="screen">
+    .popover{
+      max-width: 100%; /* Max Width of the popover (depending on the container!) */
+      z-index: 10800;
+    }
+    </style>
     {% endstylesheets %}
 {% endblock %}
 
 {% block content %}
-<form method="POST" id="{{ view_id|default(random()) }}-index-form" >
 
+<form method="POST" id="{{ view_id|default(random()) }}-index-form" class="form-inline">
 <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title">{{ __('Pages') }}</h3>
+      <h3 class="box-title">{% block box_title %}{% endblock %}</h3>
     </div>
     <div class="box-body">
 
       <!-- @todo move sticky toolbar script and style -->
-      <div class="row dt-row-sticky-toolbar">
+      <div class="row">
           <div class="col-md-12">
+            <div class="" style="float:right;">
               {% block action %} {% endblock %}
-
-              <div class="dt-table-filter-container clearfix">
-                  <input type="search" class="dt-table-filter form-control" placeholder="{{ __('Search') }}">
-                  {% block filter %} {% endblock %}
-              </div>
+            </div>
+            <input type="text" name="name" value="" class="form-control input-sm" placeholder="Type to filer">
+            <br>
+            <a href="javascript:;" id="afp-toggler"><small>Advanced Filter</small></a>
           </div>
       </div>
-      <div class="row row-content">
-         <div class="col-md-12 table-responsive">
+      <div class="advanced-filter-panel" style="border:1px solid #e1e1e1; padding:10px;display:none;">
+        <a id="add-filter" tabindex="0" class="btn btn-xs btn-default" role="button" data-toggle="popover" >Add Filter</a>
+      </div>
+      <div class="row">
+         <div class="col-md-12">
               {% block table %} {% endblock %}
           </div>
       </div>
@@ -58,4 +67,10 @@
     %}
     <script type="text/javascript" src="{{ asset_url }}"></script>
     {% endjavascripts %}
+    <script type="text/javascript">
+      $('#afp-toggler').click(function(e){
+        e.preventDefault();
+        $('.advanced-filter-panel').toggle();
+      });
+    </script>
 {% endblock %}
